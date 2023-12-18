@@ -225,7 +225,7 @@ elif input_user == '4':
             social_media = [
             {"url": "https://www.facebook.com/{}", "name": "Facebook"},
             {"url": "https://www.twitter.com/{}", "name": "Twitter"},
-            {"url": "https://www.instagram.com/{}", "name": "Instagram"},
+            {"url": "https://www.instagram.com/{}", "merveefiliz.1": "Instagram"},
             {"url": "https://www.linkedin.com/in/{}", "name": "LinkedIn"},
             {"url": "https://www.github.com/{}", "name": "GitHub"},
             {"url": "https://www.pinterest.com/{}", "name": "Pinterest"},
@@ -250,7 +250,7 @@ elif input_user == '4':
             ]
 
             for site in social_media:
-                url = site['url'].format(username)
+                url = site['url'].format(merveefiliz.1)
                 response = requests.get(url)
                 if response.status_code == 200:
                     results[site['name']] = url
